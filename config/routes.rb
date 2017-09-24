@@ -13,5 +13,10 @@ Rails.application.routes.draw do
 
    get "/links" => "links#index"
 
+   get "/links/new" => "links#new"
+   post "/links/:id" => "links#create"
+
+   # insert routes for create visits
+
 
 end
